@@ -211,27 +211,6 @@ let rec type_check (e:expr) (env: type_environment) : result =
 
 
 let check e = type_check e [] 
-(* let evaluate e = eval [] e *)
-
-(* Part 4. Evaluation *)
-
-(* let rec eval (env: value_environment) (e:expr) : value =
- match e with
- | Val v -> v
-
- | Add (e1, e2) ->
-    ( match eval env e1, eval env e2 with
-      | Int v1, Int v2 -> Int (v1 + v2)
-      | _ -> raise (Failure "incompatible types, Add")
-    )
-
- | Let (n, t, dexpr, body) ->
-     let v = eval env dexpr in
-     eval ( (n,v)::env ) body
-
- | _ -> failwith "complete this function" *)
-
-
 
 
 (* some sample expressions *)

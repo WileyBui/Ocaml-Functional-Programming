@@ -1,4 +1,4 @@
-# Homework 4: Reasoning about Correctness.
+# Reasoning about Correctness.
 
 by Wiley Bui
 
